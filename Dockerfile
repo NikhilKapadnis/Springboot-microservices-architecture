@@ -9,5 +9,5 @@ RUN mvn clean package -DskipTests
 # Stage 2: Create a lightweight runtime image
 FROM eclipse-temurin:11-jre AS runtime
 WORKDIR /app
-COPY --from=build /app/target/jenkinstest-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/wine-manager-0.0.1-SNAPSHOT.jar app.jar
 CMD ["java", "-jar", "app.jar"]
