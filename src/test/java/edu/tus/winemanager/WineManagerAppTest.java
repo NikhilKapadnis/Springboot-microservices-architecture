@@ -1,6 +1,6 @@
 package edu.tus.winemanager;
 
-import edu.tus.winemanager.service.WineService;
+import edu.tus.winemanager.service.WineXService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,11 +9,11 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class WineManagerAppTest {
-    private WineService wineService;
+    private WineXService wineService;
 
     @BeforeEach
     void setUp() {
-        wineService = new WineService();
+        wineService = new WineXService();
     }
 
     @Test

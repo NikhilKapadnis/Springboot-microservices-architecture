@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 @Service
-public class WineService {
+public class WineXService {
     private final List<String> wines = new ArrayList<>();
 
     public List<String> getAllWines() {
