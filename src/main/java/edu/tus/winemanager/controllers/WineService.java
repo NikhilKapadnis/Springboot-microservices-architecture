@@ -41,7 +41,7 @@ public class WineService {
 
 	@GetMapping("/hellomyproject ")
         public String sayHello(){
-             return "The end point works as expected   Nikhils ..";
+             return "The end point works as expected";
         }
 	
 	@GetMapping("/wines")
