@@ -39,7 +39,10 @@ public class WineService {
 	@Autowired
 	WineValidator wineValidator;
 
-	
+	@GetMapping("/hellomyproject ")
+        public String sayHello(){
+             return "The end point works as expected   Nikhils ..";
+        }
 	
 	@GetMapping("/wines")
 	public List<Wine> findAllWines(){
